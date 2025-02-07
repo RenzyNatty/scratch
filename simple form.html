@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <style>
+        body{
+            background-attachment: fixed;
+            background-color: gray;
+            color: black;
+            text-align: center;
+        }
+    </style>
+
+    <form action="" method="post">
+        <h2>Registration Form</h2>
+
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Gender Field -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Educational Qualification Section -->
+        <h3>Educational Qualification</h3>
+        <label for="qualification">Select Qualification:</label><br>
+        <input list="qualifications" id="qualification" name="qualification" required>
+        <datalist id="qualifications">
+            <option value="Degree">Degree</option>
+            <option value="Engineering">Engineering</option>
+            <option value="High School">High School</option>
+        </datalist><br><br>
+
+        <!-- Address Section -->
+        <h3>Address</h3>
+        <label for="address">Your Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <!-- Resume Upload Section -->
+        <label for="resume">Attach Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
